@@ -4,8 +4,10 @@ pipeline {
         MAVEN_HOME = tool('maven3.5')
     }
 */
-	agent any 
-	
+	agent {
+               label 'SIT'
+              } 
+
 
 	stages {
 	    stage('Checkout') {
